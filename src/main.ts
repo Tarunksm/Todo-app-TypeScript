@@ -2,7 +2,7 @@ import "./style.css";
 
 const todoInput = document.querySelector("#todoInput") as HTMLInputElement;
 
-const buttonElem = document.querySelector("#button");
+const buttonElem = document.querySelector("#button") as HTMLButtonElement;
 
 buttonElem.addEventListener("click", () => {
   addUpdateTodo();
