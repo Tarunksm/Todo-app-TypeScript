@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-app</title>
+  </head>
+  <body class="bg-gray-300">
+    <div class="flex justify-center items-center h-screen" id="app">
+      <div
+        class="bg-white p-6 m-10 max-w-md w-full space-y-3 rounded-3xl shadow-2xl flex flex-col"
+      >
+        <h1 class="font-bold text-3xl text-center">My Todos</h1>
+        <input
+          class="border-2 border-gray-200 p-2.5 rounded-xl"
+          id="todoInput"
+          type="text"
+          placeholder="Enter a task..."
+        />
+        <button
+          id="button"
+          class="bg-blue-500 text-white p-2.5 rounded-xl cursor-pointer hover:brightness-110 active:scale-95"
+        >
+          Add a task
+        </button>
+        <div
+          id="todoList"
+          class="flex flex-col border-t-2 border-gray-200 pt-4"
+        ></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
